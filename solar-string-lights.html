@@ -9,7 +9,7 @@
 
   <meta
     name="description"
-    content="Solar String Lights by ZOVELYN. Create warm and inviting outdoor spaces with simple solar-powered lighting."
+    content="ZOVELYN Solar String Lights with 25 G40 LED bulbs, warm yellow light, solar and USB Type-C charging, IP65 protection and 7.5m length."
   >
 
   <style>
@@ -154,6 +154,62 @@
       color: #222;
     }
 
+    .details {
+      max-width: 1180px;
+      margin: auto;
+      padding: 90px 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    .details h2 {
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .specs {
+      border-top: 1px solid #ddd;
+    }
+
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 14px 0;
+      border-bottom: 1px solid #e4e1da;
+      font-size: 14px;
+    }
+
+    .spec-name {
+      color: #777;
+    }
+
+    .spec-value {
+      text-align: right;
+      font-weight: 500;
+    }
+
+    .included-list,
+    .use-list {
+      list-style: none;
+    }
+
+    .included-list li,
+    .use-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #e4e1da;
+      color: #666;
+    }
+
+    .included-list li::before,
+    .use-list li::before {
+      content: "✓";
+      margin-right: 12px;
+      color: #222;
+    }
+
     .story {
       background: #e9e5dc;
       padding: 90px 28px;
@@ -175,6 +231,38 @@
       margin-top: 22px;
       color: #666;
       font-size: 17px;
+    }
+
+    .faq {
+      max-width: 900px;
+      margin: auto;
+      padding: 90px 28px;
+    }
+
+    .faq h2 {
+      font-size: 36px;
+      font-weight: 500;
+      margin-bottom: 35px;
+    }
+
+    .faq-item {
+      border-top: 1px solid #ddd;
+      padding: 24px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .faq-item h3 {
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .faq-item p {
+      margin-top: 10px;
+      color: #777;
+      font-size: 15px;
     }
 
     .contact {
@@ -207,6 +295,20 @@
     }
 
     @media (max-width: 800px) {
+
+      .nav {
+        padding: 18px 20px;
+      }
+
+      .logo {
+        font-size: 20px;
+        letter-spacing: 3px;
+      }
+
+      .back {
+        font-size: 12px;
+      }
+
       .product {
         grid-template-columns: 1fr;
         padding: 50px 20px 70px;
@@ -214,11 +316,33 @@
       }
 
       .product-image {
-        height: 400px;
+        aspect-ratio: 1 / 1;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .details {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding: 70px 20px;
       }
 
       .story {
         padding: 70px 20px;
+      }
+
+      .story h2 {
+        font-size: 34px;
+      }
+
+      .faq {
+        padding: 70px 20px;
+      }
+
+      .faq h2 {
+        font-size: 32px;
       }
 
       .contact {
@@ -238,11 +362,16 @@
   <header>
     <nav class="nav">
       <a href="index.html" class="logo">ZOVELYN</a>
-      <a href="index.html#products" class="back">← Back to Products</a>
+
+      <a href="index.html#products" class="back">
+        ← Back to Products
+      </a>
     </nav>
   </header>
 
   <main>
+
+    <!-- PRODUCT HERO -->
 
     <section class="product">
 
@@ -264,9 +393,9 @@
         </h1>
 
         <p class="intro">
-          Create warm, inviting outdoor spaces with
-          simple solar-powered lighting designed for
-          everyday moments.
+          Create warm and inviting outdoor spaces with
+          25 G40 LED bulbs, solar and USB Type-C charging,
+          and a simple design made for everyday moments.
         </p>
 
         <a
@@ -282,11 +411,13 @@
           <h2>Product Highlights</h2>
 
           <ul>
-            <li>Solar-powered outdoor lighting</li>
-            <li>Warm and inviting ambient light</li>
-            <li>Easy to install and use</li>
-            <li>Designed for everyday outdoor spaces</li>
-            <li>Ideal for gardens, patios and balconies</li>
+            <li>3W solar-powered lighting</li>
+            <li>Solar + USB Type-C charging</li>
+            <li>25 warm yellow G40 LED bulbs</li>
+            <li>7.5 m string length</li>
+            <li>Steady and flashing lighting modes</li>
+            <li>IP65 dust and water protection</li>
+            <li>2 spare bulbs included</li>
           </ul>
 
         </div>
@@ -294,6 +425,137 @@
       </div>
 
     </section>
+
+
+    <!-- PRODUCT DETAILS -->
+
+    <section class="details">
+
+      <div>
+
+        <div class="label">
+          Specifications
+        </div>
+
+        <h2>
+          Product Details
+        </h2>
+
+        <div class="specs">
+
+          <div class="spec-row">
+            <span class="spec-name">Power</span>
+            <span class="spec-value">3W</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Charging</span>
+            <span class="spec-value">Solar + USB Type-C</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">String Length</span>
+            <span class="spec-value">7.5 m</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Bulbs</span>
+            <span class="spec-value">25</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Bulb Type</span>
+            <span class="spec-value">G40 LED</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Light Color</span>
+            <span class="spec-value">Warm Yellow</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Bulb Material</span>
+            <span class="spec-value">Plastic</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Bulb Spacing</span>
+            <span class="spec-value">25 cm</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Wire Color</span>
+            <span class="spec-value">Black</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Protection</span>
+            <span class="spec-value">IP65</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Lighting Modes</span>
+            <span class="spec-value">Steady + Flashing</span>
+          </div>
+
+          <div class="spec-row">
+            <span class="spec-name">Switch</span>
+            <span class="spec-value">Yes</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <div class="label">
+          What's Included
+        </div>
+
+        <h2>
+          In the Box
+        </h2>
+
+        <ul class="included-list">
+
+          <li>Solar String Lights</li>
+          <li>Solar Panel</li>
+          <li>25 G40 plastic LED bulbs</li>
+          <li>2 spare bulbs</li>
+          <li>USB Type-C charging support</li>
+
+        </ul>
+
+        <div style="margin-top: 55px;">
+
+          <div class="label">
+            Where to Use
+          </div>
+
+          <h2>
+            Made for Outdoor Moments
+          </h2>
+
+          <ul class="use-list">
+
+            <li>Gardens and patios</li>
+            <li>Balconies</li>
+            <li>Outdoor seating areas</li>
+            <li>Fences and garden structures</li>
+            <li>Home gatherings and evening spaces</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STORY -->
 
     <section class="story">
 
@@ -308,16 +570,94 @@
         </h2>
 
         <p>
-          Whether you're enjoying a quiet evening,
-          spending time with family or creating a
-          welcoming outdoor space, ZOVELYN Solar
-          String Lights are designed to add a warm
-          touch to everyday moments.
+          Designed to bring a warm and welcoming atmosphere
+          to everyday outdoor spaces, ZOVELYN Solar String
+          Lights combine solar charging with USB Type-C
+          charging for flexible everyday use.
         </p>
 
       </div>
 
     </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq">
+
+      <div class="label">
+        FAQ
+      </div>
+
+      <h2>
+        Questions, answered.
+      </h2>
+
+      <div class="faq-item">
+
+        <h3>
+          How can the lights be charged?
+        </h3>
+
+        <p>
+          The lights support solar charging and USB Type-C charging.
+        </p>
+
+      </div>
+
+      <div class="faq-item">
+
+        <h3>
+          What color is the light?
+        </h3>
+
+        <p>
+          The bulbs produce a warm yellow light designed
+          for a comfortable and welcoming atmosphere.
+        </p>
+
+      </div>
+
+      <div class="faq-item">
+
+        <h3>
+          Does it have different lighting modes?
+        </h3>
+
+        <p>
+          Yes. The lights support steady and flashing modes.
+        </p>
+
+      </div>
+
+      <div class="faq-item">
+
+        <h3>
+          Can it be used outdoors?
+        </h3>
+
+        <p>
+          Yes. The product is rated IP65 for dust and water protection.
+        </p>
+
+      </div>
+
+      <div class="faq-item">
+
+        <h3>
+          Are spare bulbs included?
+        </h3>
+
+        <p>
+          Yes. Two spare plastic bulbs are included.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
 
     <section class="contact">
 
@@ -346,11 +686,19 @@
 
   </main>
 
+
   <footer>
 
     <div class="footer-inner">
-      <div>© 2026 ZOVELYN. All rights reserved.</div>
-      <div>Home & Lifestyle</div>
+
+      <div>
+        © 2026 ZOVELYN. All rights reserved.
+      </div>
+
+      <div>
+        Home & Lifestyle
+      </div>
+
     </div>
 
   </footer>
