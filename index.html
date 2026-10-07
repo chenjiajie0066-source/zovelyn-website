@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ZOVELYN | Better Living, Simply.</title>
+
+  <meta
+    name="description"
+    content="ZOVELYN creates practical, beautiful products for better everyday living."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+
+    header {
+      width: 100%;
+      border-bottom: 1px solid #eeeeee;
+      background: #ffffff;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* Hero */
+
+    .hero {
+      max-width: 1200px;
+      margin: auto;
+      padding: 100px 24px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      margin-bottom: 24px;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 35px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #222;
+      color: white;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+
+    /* Section */
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 24px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #777;
+    }
+
+    /* Products */
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .product {
+      border: 1px solid #eeeeee;
+      background: white;
+      overflow: hidden;
+    }
+
+    .product-image {
+      height: 360px;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 14px;
+    }
+
+    .product-content {
+      padding: 25px;
+    }
+
+    .product-content h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .product-content p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    /* About */
+
+    .about {
+      background: #f7f7f7;
+    }
+
+    .about-inner {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-inner h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about-inner p {
+      color: #666;
+      font-size: 17px;
+    }
+
+    /* Values */
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .value {
+      padding: 30px 20px;
+    }
+
+    .value h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .value p {
+      color: #777;
+      font-size: 15px;
+    }
+
+    /* Contact */
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    /* Footer */
+
+    footer {
+      border-top: 1px solid #eeeeee;
+      padding: 30px 24px;
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 700px) {
+
+      .nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      .hero {
+        padding: 70px 24px;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .values {
+        grid-template-columns: 1fr;
+      }
+
+      .product-image {
+        height: 280px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+    <nav class="nav">
+
+      <a href="#" class="logo">
+        ZOVELYN
+      </a>
+
+      <div class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- Hero -->
+
+  <main>
+
+    <section class="hero">
+
+      <h1>
+        Better Living,<br>
+        Simply.
+      </h1>
+
+      <p>
+        Practical and thoughtfully selected products
+        designed to make everyday living better.
+      </p>
+
+      <a href="#products" class="button">
+        Explore Products
+      </a>
+
+    </section>
+
+
+    <!-- Products -->
+
+    <section id="products" class="section">
+
+      <div class="section-title">
+
+        <h2>
+          Featured Products
+        </h2>
+
+        <p>
+          Discover products selected for modern everyday life.
+        </p>
+
+      </div>
+
+
+      <div class="products">
+
+
+        <!-- Product 1 -->
+
+        <article class="product">
+
+          <div class="product-image">
+            Product Image
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Solar String Lights
+            </h3>
+
+            <p>
+              Create a warm and welcoming atmosphere
+              for gardens, patios and outdoor spaces.
+            </p>
+
+            <a href="#contact" class="button">
+              Get Details
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- Product 2 -->
+
+        <article class="product">
+
+          <div class="product-image">
+            Product Image
+          </div>
+
+          <div class="product-content">
+
+            <h3>
+              Kids Night Light
+            </h3>
+
+            <p>
+              Soft and comforting lighting designed
+              for bedrooms and children's spaces.
+            </p>
+
+            <a href="#contact" class="button">
+              Get Details
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- About -->
+
+    <section id="about" class="about">
+
+      <div class="section about-inner">
+
+        <h2>
+          About ZOVELYN
+        </h2>
+
+        <p>
+          ZOVELYN is a global home and lifestyle brand
+          focused on practical products that bring
+          comfort, convenience and thoughtful design
+          into everyday life.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Values -->
+
+    <section class="section">
+
+      <div class="section-title">
+
+        <h2>
+          Why ZOVELYN
+        </h2>
+
+      </div>
+
+
+      <div class="values">
+
+        <div class="value">
+
+          <h3>
+            Thoughtfully Selected
+          </h3>
+
+          <p>
+            We focus on products that provide
+            real value in everyday life.
+          </p>
+
+        </div>
+
+
+        <div class="value">
+
+          <h3>
+            Practical Design
+          </h3>
+
+          <p>
+            Simple products designed to be
+            useful, reliable and easy to enjoy.
+          </p>
+
+        </div>
+
+
+        <div class="value">
+
+          <h3>
+            Global Access
+          </h3>
+
+          <p>
+            We make our products available
+            to customers around the world.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="section contact">
+
+      <h2>
+        Get in Touch
+      </h2>
+
+      <p>
+        Interested in our products?
+        Contact the ZOVELYN team.
+      </p>
+
+      <a
+        href="mailto:contact@zovelyn.com"
+        class="button"
+      >
+        Contact Us
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    © 2026 ZOVELYN. All rights reserved.
+
+  </footer>
+
+</body>
+</html>
