@@ -121,15 +121,20 @@
     }
 
     .hero-image {
-      height: 500px;
-      background: #e8e4dc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #888;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
+  height: 500px;
+  background: #e8e4dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
     /* SECTION */
 
