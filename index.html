@@ -180,14 +180,20 @@
     }
 
     .product-image {
-      height: 420px;
-      background: #e9e6df;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #888;
-      font-size: 14px;
-    }
+  height: 420px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 
     .product-info {
       padding: 25px;
