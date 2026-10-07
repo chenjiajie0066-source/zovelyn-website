@@ -45,30 +45,48 @@
     }
 
     .nav {
-      max-width: 1180px;
-      margin: auto;
-      padding: 20px 28px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  max-width: 1180px;
+  margin: auto;
+  padding: 20px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .logo {
-      font-size: 25px;
-      font-weight: 700;
-      letter-spacing: 4px;
-    }
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 30px;
-      font-size: 14px;
-    }
+.nav-links {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+}
 
-    .nav-links a:hover {
-      opacity: 0.6;
-    }
+.nav-links a:hover {
+  opacity: 0.6;
+}
 
+/* Mobile Navigation */
+@media (max-width: 800px) {
+
+  .nav {
+    padding: 18px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    font-size: 12px;
+  }
+
+}
     /* HERO */
 
  .hero {
