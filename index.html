@@ -71,23 +71,24 @@
 
     /* HERO */
 
-    .hero {
-  max-width: 1400px;
-  margin: auto;
-  min-height: 620px;
-  padding: 60px 40px;
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 50px;
+ .hero {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  min-height: 680px;
+  margin: 0;
+  padding: 0;
+  display: flex;
   align-items: center;
+  overflow: hidden;
 }
-
-    .hero-text span {
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #777;
-    }
+   .hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
+  margin-left: max(6vw, 40px);
+  padding: 40px;
+}
 
     .hero h1 {
       margin-top: 20px;
@@ -120,20 +121,20 @@
       opacity: 0.85;
     }
 
-   .hero-image {
+  .hero-image {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 560px;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  background: #f4f1eb;
   overflow: hidden;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -395,7 +396,14 @@
 
   <main>
 
-    <section class="hero">
+   <section class="hero">
+
+  <div class="hero-image">
+    <img
+      src="https://raw.githubusercontent.com/chenjiajie0066-source/zovelyn-website/main/zovelyn-hero.png"
+      alt="ZOVELYN Home & Lifestyle"
+    >
+  </div>
 
   <div class="hero-text">
 
@@ -412,21 +420,12 @@
     </p>
 
     <a href="#products" class="button">
-      Shop Now
-      <span>→</span>
+      Shop Now <span>→</span>
     </a>
 
   </div>
 
- <div class="hero-image">
-  <img
-    src="https://raw.githubusercontent.com/chenjiajie0066-source/zovelyn-website/main/zovelyn-hero.png"
-    alt="ZOVELYN Home & Lifestyle"
-  >
-</div>
-
 </section>
-
 
     <!-- PRODUCTS -->
 
