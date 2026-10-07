@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="ZOVELYN creates practical, beautiful products for better everyday living."
+    content="ZOVELYN creates thoughtful home and lifestyle products designed to make everyday living simpler, warmer and better."
   >
 
   <style>
@@ -18,10 +18,14 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: #222;
-      background: #ffffff;
+      background: #faf9f6;
       line-height: 1.6;
     }
 
@@ -30,27 +34,29 @@
       color: inherit;
     }
 
-    /* Header */
+    /* HEADER */
 
     header {
-      width: 100%;
-      border-bottom: 1px solid #eeeeee;
-      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(250, 249, 246, 0.96);
+      border-bottom: 1px solid #e8e5df;
     }
 
     .nav {
-      max-width: 1200px;
+      max-width: 1180px;
       margin: auto;
-      padding: 20px 24px;
+      padding: 20px 28px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
-      font-size: 26px;
+      font-size: 25px;
       font-weight: 700;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
     }
 
     .nav-links {
@@ -63,212 +69,305 @@
       opacity: 0.6;
     }
 
-    /* Hero */
+    /* HERO */
 
     .hero {
-      max-width: 1200px;
+      max-width: 1180px;
       margin: auto;
-      padding: 100px 24px;
-      text-align: center;
+      min-height: 650px;
+      padding: 90px 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-text span {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #777;
     }
 
     .hero h1 {
-      font-size: clamp(42px, 7vw, 76px);
+      margin-top: 20px;
+      font-size: clamp(48px, 6vw, 76px);
       line-height: 1.05;
-      margin-bottom: 24px;
-      letter-spacing: -2px;
+      font-weight: 600;
+      letter-spacing: -3px;
     }
 
     .hero p {
-      max-width: 650px;
-      margin: 0 auto 35px;
+      margin-top: 25px;
+      max-width: 500px;
       color: #666;
       font-size: 18px;
     }
 
     .button {
       display: inline-block;
-      padding: 14px 28px;
+      margin-top: 35px;
+      padding: 15px 30px;
       background: #222;
       color: white;
-      border-radius: 4px;
+      border-radius: 3px;
       font-size: 14px;
-      font-weight: 600;
+      transition: 0.2s;
     }
 
     .button:hover {
-      opacity: 0.8;
+      transform: translateY(-2px);
+      opacity: 0.85;
     }
 
-    /* Section */
+    .hero-image {
+      height: 500px;
+      background: #e8e4dc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
 
-    .section {
-      max-width: 1200px;
+    /* SECTION */
+
+    section {
+      padding: 100px 28px;
+    }
+
+    .section-inner {
+      max-width: 1180px;
       margin: auto;
-      padding: 80px 24px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 15px;
     }
 
     .section-title {
-      text-align: center;
-      margin-bottom: 45px;
+      font-size: 42px;
+      line-height: 1.15;
+      font-weight: 500;
+      margin-bottom: 50px;
     }
 
-    .section-title h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .section-title p {
-      color: #777;
-    }
-
-    /* Products */
+    /* PRODUCTS */
 
     .products {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      background: #fff;
     }
 
-    .product {
-      border: 1px solid #eeeeee;
-      background: white;
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+    }
+
+    .product-card {
+      background: #faf9f6;
       overflow: hidden;
     }
 
     .product-image {
-      height: 360px;
-      background: #f5f5f5;
+      height: 420px;
+      background: #e9e6df;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #999;
+      color: #888;
       font-size: 14px;
     }
 
-    .product-content {
+    .product-info {
       padding: 25px;
     }
 
-    .product-content h3 {
-      font-size: 22px;
-      margin-bottom: 10px;
+    .product-info h3 {
+      font-size: 23px;
+      font-weight: 500;
     }
 
-    .product-content p {
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    /* About */
-
-    .about {
-      background: #f7f7f7;
-    }
-
-    .about-inner {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .about-inner h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .about-inner p {
-      color: #666;
-      font-size: 17px;
-    }
-
-    /* Values */
-
-    .values {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      text-align: center;
-    }
-
-    .value {
-      padding: 30px 20px;
-    }
-
-    .value h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
-    }
-
-    .value p {
+    .product-info p {
+      margin-top: 10px;
       color: #777;
       font-size: 15px;
     }
 
-    /* Contact */
+    .product-link {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: 14px;
+      font-weight: 600;
+      border-bottom: 1px solid #222;
+      padding-bottom: 3px;
+    }
+
+    /* LIFESTYLE */
+
+    .lifestyle {
+      background: #e9e5dc;
+    }
+
+    .lifestyle-content {
+      max-width: 700px;
+    }
+
+    .lifestyle h2 {
+      font-size: 48px;
+      line-height: 1.15;
+      font-weight: 500;
+    }
+
+    .lifestyle p {
+      margin-top: 25px;
+      color: #666;
+      font-size: 17px;
+    }
+
+    /* WHY */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 45px;
+    }
+
+    .why-item {
+      border-top: 1px solid #ccc;
+      padding-top: 25px;
+    }
+
+    .why-number {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .why-item h3 {
+      margin-top: 20px;
+      font-size: 21px;
+      font-weight: 500;
+    }
+
+    .why-item p {
+      margin-top: 12px;
+      color: #777;
+      font-size: 15px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #fff;
+    }
+
+    .about-content {
+      max-width: 800px;
+    }
+
+    .about h2 {
+      font-size: 46px;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+
+    .about p {
+      margin-top: 25px;
+      color: #666;
+      font-size: 17px;
+    }
+
+    /* CONTACT */
 
     .contact {
       text-align: center;
     }
 
-    .contact p {
-      color: #666;
-      margin-bottom: 25px;
+    .contact h2 {
+      font-size: 48px;
+      font-weight: 500;
     }
 
-    /* Footer */
+    .contact p {
+      margin-top: 15px;
+      color: #777;
+    }
+
+    /* FOOTER */
 
     footer {
-      border-top: 1px solid #eeeeee;
-      padding: 30px 24px;
-      text-align: center;
-      color: #888;
-      font-size: 13px;
+      border-top: 1px solid #e2dfd8;
+      padding: 30px 28px;
     }
 
-    /* Mobile */
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #888;
+    }
 
-    @media (max-width: 700px) {
+    /* MOBILE */
+
+    @media (max-width: 800px) {
 
       .nav {
-        flex-direction: column;
-        gap: 15px;
+        padding: 18px 20px;
       }
 
       .nav-links {
-        gap: 18px;
+        gap: 15px;
+        font-size: 12px;
       }
 
       .hero {
-        padding: 70px 24px;
-      }
-
-      .products {
         grid-template-columns: 1fr;
+        padding: 70px 20px;
       }
 
-      .values {
+      .hero-image {
+        height: 350px;
+      }
+
+      .product-grid {
         grid-template-columns: 1fr;
       }
 
       .product-image {
-        height: 280px;
+        height: 350px;
       }
 
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 20px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
 
   <header>
     <nav class="nav">
 
-      <a href="#" class="logo">
-        ZOVELYN
-      </a>
+      <a href="#" class="logo">ZOVELYN</a>
 
       <div class="nav-links">
         <a href="#products">Products</a>
@@ -280,222 +379,287 @@
   </header>
 
 
-  <!-- Hero -->
+  <!-- HERO -->
 
   <main>
 
     <section class="hero">
 
-      <h1>
-        Better Living,<br>
-        Simply.
-      </h1>
+      <div class="hero-text">
 
-      <p>
-        Practical and thoughtfully selected products
-        designed to make everyday living better.
-      </p>
+        <span>Home & Lifestyle</span>
 
-      <a href="#products" class="button">
-        Explore Products
-      </a>
-
-    </section>
-
-
-    <!-- Products -->
-
-    <section id="products" class="section">
-
-      <div class="section-title">
-
-        <h2>
-          Featured Products
-        </h2>
+        <h1>
+          Better Living,<br>
+          Simply.
+        </h1>
 
         <p>
-          Discover products selected for modern everyday life.
+          Thoughtful products designed to bring more comfort,
+          warmth and simplicity to everyday life.
         </p>
+
+        <a href="#products" class="button">
+          Explore Products
+        </a>
 
       </div>
 
+      <div class="hero-image">
+        ZOVELYN PRODUCT IMAGE
+      </div>
 
-      <div class="products">
+    </section>
 
 
-        <!-- Product 1 -->
+    <!-- PRODUCTS -->
 
-        <article class="product">
+    <section id="products" class="products">
 
-          <div class="product-image">
-            Product Image
-          </div>
+      <div class="section-inner">
 
-          <div class="product-content">
+        <div class="section-label">
+          Featured Collection
+        </div>
 
-            <h3>
+        <h2 class="section-title">
+          Designed for everyday living.
+        </h2>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+
+            <div class="product-image">
               Solar String Lights
-            </h3>
+            </div>
 
-            <p>
-              Create a warm and welcoming atmosphere
-              for gardens, patios and outdoor spaces.
-            </p>
+            <div class="product-info">
 
-            <a href="#contact" class="button">
-              Get Details
-            </a>
+              <h3>Solar String Lights</h3>
 
-          </div>
+              <p>
+                Create warm and inviting outdoor spaces
+                with simple solar-powered lighting.
+              </p>
 
-        </article>
+              <a href="#contact" class="product-link">
+                Get Details →
+              </a>
+
+            </div>
+
+          </article>
 
 
-        <!-- Product 2 -->
+          <article class="product-card">
 
-        <article class="product">
-
-          <div class="product-image">
-            Product Image
-          </div>
-
-          <div class="product-content">
-
-            <h3>
+            <div class="product-image">
               Kids Night Light
-            </h3>
+            </div>
 
-            <p>
-              Soft and comforting lighting designed
-              for bedrooms and children's spaces.
-            </p>
+            <div class="product-info">
 
-            <a href="#contact" class="button">
-              Get Details
-            </a>
+              <h3>Kids Night Light</h3>
 
-          </div>
+              <p>
+                A gentle light designed to make bedrooms
+                feel warmer, calmer and more comfortable.
+              </p>
 
-        </article>
+              <a href="#contact" class="product-link">
+                Get Details →
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- About -->
+    <!-- LIFESTYLE -->
+
+    <section class="lifestyle">
+
+      <div class="section-inner">
+
+        <div class="lifestyle-content">
+
+          <div class="section-label">
+            Everyday Moments
+          </div>
+
+          <h2>
+            Small details can make
+            everyday life better.
+          </h2>
+
+          <p>
+            From warm outdoor evenings to peaceful
+            bedrooms, ZOVELYN focuses on practical
+            products that fit naturally into modern homes.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY ZOVELYN -->
+
+    <section>
+
+      <div class="section-inner">
+
+        <div class="section-label">
+          Why ZOVELYN
+        </div>
+
+        <h2 class="section-title">
+          Made with everyday life in mind.
+        </h2>
+
+        <div class="why-grid">
+
+          <div class="why-item">
+
+            <div class="why-number">01</div>
+
+            <h3>Thoughtfully Designed</h3>
+
+            <p>
+              We focus on simple designs that are
+              useful, comfortable and easy to live with.
+            </p>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-number">02</div>
+
+            <h3>Practical & Reliable</h3>
+
+            <p>
+              Products should work naturally in
+              everyday situations and homes.
+            </p>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="why-number">03</div>
+
+            <h3>Made for Everyday Life</h3>
+
+            <p>
+              We look for products that add real
+              value without unnecessary complexity.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
 
     <section id="about" class="about">
 
-      <div class="section about-inner">
+      <div class="section-inner">
+
+        <div class="about-content">
+
+          <div class="section-label">
+            About ZOVELYN
+          </div>
+
+          <h2>
+            Better products for
+            better everyday moments.
+          </h2>
+
+          <p>
+            ZOVELYN is a global Home & Living brand
+            focused on thoughtful, practical and
+            enjoyable products for modern homes.
+          </p>
+
+          <p>
+            We believe the best products do not need
+            to be complicated. They simply need to make
+            everyday life a little better.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+      <div class="section-inner">
+
+        <div class="section-label">
+          Contact
+        </div>
 
         <h2>
-          About ZOVELYN
+          We'd love to hear from you.
         </h2>
 
         <p>
-          ZOVELYN is a global home and lifestyle brand
-          focused on practical products that bring
-          comfort, convenience and thoughtful design
-          into everyday life.
+          Interested in ZOVELYN products?
+          Get in touch with us.
         </p>
 
-      </div>
-
-    </section>
-
-
-    <!-- Values -->
-
-    <section class="section">
-
-      <div class="section-title">
-
-        <h2>
-          Why ZOVELYN
-        </h2>
+        <a
+          href="mailto:contact@zovelyn.com"
+          class="button"
+        >
+          Contact ZOVELYN
+        </a>
 
       </div>
-
-
-      <div class="values">
-
-        <div class="value">
-
-          <h3>
-            Thoughtfully Selected
-          </h3>
-
-          <p>
-            We focus on products that provide
-            real value in everyday life.
-          </p>
-
-        </div>
-
-
-        <div class="value">
-
-          <h3>
-            Practical Design
-          </h3>
-
-          <p>
-            Simple products designed to be
-            useful, reliable and easy to enjoy.
-          </p>
-
-        </div>
-
-
-        <div class="value">
-
-          <h3>
-            Global Access
-          </h3>
-
-          <p>
-            We make our products available
-            to customers around the world.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Contact -->
-
-    <section id="contact" class="section contact">
-
-      <h2>
-        Get in Touch
-      </h2>
-
-      <p>
-        Interested in our products?
-        Contact the ZOVELYN team.
-      </p>
-
-      <a
-        href="mailto:contact@zovelyn.com"
-        class="button"
-      >
-        Contact Us
-      </a>
 
     </section>
 
   </main>
 
 
-  <!-- Footer -->
+  <!-- FOOTER -->
 
   <footer>
 
-    © 2026 ZOVELYN. All rights reserved.
+    <div class="footer-inner">
+
+      <div>
+        © 2026 ZOVELYN. All rights reserved.
+      </div>
+
+      <div>
+        Home & Lifestyle
+      </div>
+
+    </div>
 
   </footer>
 
