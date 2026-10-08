@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kids Night Light | ZOVELYN</title>
+  <title>Starry Sky Projection Night Light | ZOVELYN</title>
 
-  <meta
-    name="description"
-    content="Kids Night Light by ZOVELYN. A gentle light designed to make bedrooms feel warmer, calmer and more comfortable."
-  >
+<meta
+name="description"
+content="ZOVELYN Starry Sky Projection Night Light with 12 children's songs, soft night lighting, remote control, timer and rechargeable battery."
+
+>
 
   <style>
     * {
@@ -63,6 +65,8 @@
       color: #222;
     }
 
+    /* Product Hero */
+
     .product {
       max-width: 1180px;
       margin: auto;
@@ -73,22 +77,22 @@
       align-items: center;
     }
 
-   .product-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  background: #e9e6df;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+    .product-image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-.product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
 
     .label {
       font-size: 12px;
@@ -109,6 +113,7 @@
       margin-top: 25px;
       font-size: 18px;
       color: #666;
+      max-width: 520px;
     }
 
     .button {
@@ -124,6 +129,8 @@
     .button:hover {
       opacity: 0.85;
     }
+
+    /* Highlights */
 
     .features {
       border-top: 1px solid #ddd;
@@ -153,6 +160,48 @@
       color: #222;
     }
 
+    /* Product Details */
+
+    .details {
+      padding: 90px 28px;
+      background: #f1eee8;
+    }
+
+    .details-inner {
+      max-width: 980px;
+      margin: auto;
+    }
+
+    .details h2 {
+      margin-top: 15px;
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .specs {
+      margin-top: 45px;
+      border-top: 1px solid #d8d4cc;
+    }
+
+    .spec-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 17px 0;
+      border-bottom: 1px solid #d8d4cc;
+      font-size: 15px;
+    }
+
+    .spec-name {
+      color: #777;
+    }
+
+    .spec-value {
+      color: #222;
+    }
+
+    /* Story */
+
     .story {
       background: #e9e5dc;
       padding: 90px 28px;
@@ -176,9 +225,47 @@
       font-size: 17px;
     }
 
+    /* What's Included */
+
+    .included {
+      padding: 90px 28px;
+    }
+
+    .included-inner {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .included h2 {
+      margin-top: 15px;
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .included-list {
+      margin-top: 35px;
+      list-style: none;
+    }
+
+    .included-list li {
+      padding: 15px 0;
+      border-bottom: 1px solid #e4e1da;
+      color: #666;
+    }
+
+    .included-list li::before {
+      content: "✓";
+      margin-right: 12px;
+      color: #222;
+    }
+
+    /* Contact */
+
     .contact {
       text-align: center;
       padding: 100px 28px;
+      background: #faf9f6;
     }
 
     .contact h2 {
@@ -190,6 +277,8 @@
       margin-top: 15px;
       color: #777;
     }
+
+    /* Footer */
 
     footer {
       border-top: 1px solid #e2dfd8;
@@ -205,7 +294,23 @@
       font-size: 13px;
     }
 
+    /* Mobile */
+
     @media (max-width: 800px) {
+
+      .nav {
+        padding: 18px 20px;
+      }
+
+      .logo {
+        font-size: 20px;
+        letter-spacing: 3px;
+      }
+
+      .back {
+        font-size: 12px;
+      }
+
       .product {
         grid-template-columns: 1fr;
         padding: 50px 20px 70px;
@@ -213,15 +318,52 @@
       }
 
       .product-image {
-        height: 400px;
+        aspect-ratio: 1 / 1;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .details {
+        padding: 70px 20px;
+      }
+
+      .details h2 {
+        font-size: 34px;
+      }
+
+      .spec-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
       }
 
       .story {
         padding: 70px 20px;
       }
 
+      .story h2 {
+        font-size: 34px;
+      }
+
+      .included {
+        padding: 70px 20px;
+      }
+
+      .included h2 {
+        font-size: 34px;
+      }
+
       .contact {
         padding: 75px 20px;
+      }
+
+      .contact h2 {
+        font-size: 34px;
       }
 
       .footer-inner {
@@ -230,124 +372,380 @@
       }
     }
   </style>
+
 </head>
 
 <body>
 
   <header>
-    <nav class="nav">
-      <a href="index.html" class="logo">ZOVELYN</a>
-      <a href="index.html#products" class="back">← Back to Products</a>
-    </nav>
+
+```
+<nav class="nav">
+
+  <a href="index.html" class="logo">
+    ZOVELYN
+  </a>
+
+  <a href="index.html#products" class="back">
+    ← Back to Products
+  </a>
+
+</nav>
+```
+
   </header>
 
   <main>
 
-    <section class="product">
+```
+<!-- PRODUCT HERO -->
 
-    <div class="product-image">
-  <img src="https://raw.githubusercontent.com/chenjiajie0066-source/zovelyn-website/main/Z01%E7%9A%87%E5%86%A0%E9%B8%AD%E9%A6%96%E5%9B%BE.jpeg" alt="ZOVELYN Kids Night Light">
+<section class="product">
 
-      <div>
+  <div class="product-image">
 
-        <div class="label">
-          ZOVELYN Home & Lifestyle
-        </div>
+    <img
+      src="https://raw.githubusercontent.com/chenjiajie0066-source/zovelyn-website/main/Z01%E7%9A%87%E5%86%A0%E9%B8%AD%E9%A6%96%E5%9B%BE.jpeg"
+      alt="ZOVELYN Starry Sky Projection Night Light"
+    >
 
-        <h1>
-          Kids Night Light
-        </h1>
-
-        <p class="intro">
-          A gentle light designed to make bedrooms
-          feel warmer, calmer and more comfortable.
-        </p>
-
-        <a
-          href="https://wa.me/8613423724979?text=Hello%20ZOVELYN%2C%20I%27m%20interested%20in%20the%20Kids%20Night%20Light."
-          class="button"
-          target="_blank"
-        >
-          Chat with us on WhatsApp
-        </a>
-
-        <div class="features">
-
-          <h2>Product Highlights</h2>
-
-          <ul>
-            <li>Gentle lighting for bedrooms</li>
-            <li>Designed for children and families</li>
-            <li>Comfortable nighttime atmosphere</li>
-            <li>Simple and practical everyday design</li>
-            <li>Suitable for bedrooms and bedside spaces</li>
-          </ul>
-
-        </div>
-
-      </div>
-
-    </section>
+  </div>
 
 
-    <section class="story">
+  <div>
 
-      <div class="story-inner">
+    <div class="label">
+      ZOVELYN Home & Lifestyle
+    </div>
 
-        <div class="label">
-          Calm Nights
-        </div>
+    <h1>
+      Starry Sky<br>
+      Projection Night Light
+    </h1>
 
-        <h2>
-          A little light for peaceful nights.
-        </h2>
+    <p class="intro">
+      Turn bedtime into a little adventure with
+      soft night lighting, starry sky projection
+      and 12 built-in children's songs.
+    </p>
 
-        <p>
-          A comfortable bedroom can make nighttime
-          feel easier for children and parents.
-          ZOVELYN Kids Night Light is designed to
-          bring a gentle touch of light to everyday
-          bedtime moments.
-        </p>
-
-      </div>
-
-    </section>
+    <a
+      href="https://wa.me/8613423724979?text=Hello%20ZOVELYN%2C%20I%27m%20interested%20in%20the%20Starry%20Sky%20Projection%20Night%20Light."
+      class="button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Chat with us on WhatsApp
+    </a>
 
 
-    <section class="contact">
-
-      <div class="label">
-        Questions?
-      </div>
+    <div class="features">
 
       <h2>
-        Talk to ZOVELYN.
+        Product Highlights
       </h2>
 
-      <p>
-        Have a question about this product?
-        We'd be happy to help.
-      </p>
+      <ul>
 
-      <a
-        href="https://wa.me/8613423724979?text=Hello%20ZOVELYN%2C%20I%20have%20a%20question%20about%20the%20Kids%20Night%20Light."
-        class="button"
-        target="_blank"
-      >
-        Contact Us on WhatsApp
-      </a>
+        <li>
+          Starry sky projection for a relaxing atmosphere
+        </li>
 
-    </section>
+        <li>
+          Soft night light for bedrooms and bedside spaces
+        </li>
+
+        <li>
+          12 built-in children's songs
+        </li>
+
+        <li>
+          Infrared remote control
+        </li>
+
+        <li>
+          30 / 60-minute timer
+        </li>
+
+        <li>
+          Rechargeable 1200mAh battery
+        </li>
+
+        <li>
+          12 projection films included
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PRODUCT DETAILS -->
+
+<section class="details">
+
+  <div class="details-inner">
+
+    <div class="label">
+      Product Details
+    </div>
+
+    <h2>
+      Simple details,
+      thoughtfully designed.
+    </h2>
+
+
+    <div class="specs">
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Model
+        </div>
+        <div class="spec-value">
+          Z01
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Product Type
+        </div>
+        <div class="spec-value">
+          Starry Sky Projection Night Light
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Light Colors
+        </div>
+        <div class="spec-value">
+          White / Warm White / Ice Blue
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          LED Type
+        </div>
+        <div class="spec-value">
+          3535
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Rated Voltage
+        </div>
+        <div class="spec-value">
+          DC 5V
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Rated Power
+        </div>
+        <div class="spec-value">
+          1.5W
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Battery
+        </div>
+        <div class="spec-value">
+          IMR18650 1200mAh rechargeable battery
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Music
+        </div>
+        <div class="spec-value">
+          12 built-in children's songs
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Remote Control
+        </div>
+        <div class="spec-value">
+          Infrared remote control
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Timer
+        </div>
+        <div class="spec-value">
+          30 / 60 minutes
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Projection Films
+        </div>
+        <div class="spec-value">
+          12
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Material
+        </div>
+        <div class="spec-value">
+          ABS + AS + PET
+        </div>
+      </div>
+
+      <div class="spec-row">
+        <div class="spec-name">
+          Product Size
+        </div>
+        <div class="spec-value">
+          12.5 × 12.5 × 14 cm
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- STORY -->
+
+<section class="story">
+
+  <div class="story-inner">
+
+    <div class="label">
+      Calm Nights
+    </div>
+
+    <h2>
+      A little light for peaceful nights.
+    </h2>
+
+    <p>
+      Bedtime can be a special part of the day.
+      Soft light, familiar songs and a little
+      imagination can help create a more
+      comfortable atmosphere for children.
+    </p>
+
+    <p>
+      ZOVELYN designed this night light around
+      those simple everyday moments — bringing
+      together gentle lighting, starry sky
+      projection and children's songs in one
+      practical bedside companion.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- WHAT'S INCLUDED -->
+
+<section class="included">
+
+  <div class="included-inner">
+
+    <div class="label">
+      What's Included
+    </div>
+
+    <h2>
+      Everything you need
+      for bedtime moments.
+    </h2>
+
+    <ul class="included-list">
+
+      <li>
+        ZOVELYN Starry Sky Projection Night Light
+      </li>
+
+      <li>
+        12 Projection Films
+      </li>
+
+      <li>
+        Infrared Remote Control
+      </li>
+
+      <li>
+        Rechargeable Battery
+      </li>
+
+    </ul>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+  <div class="label">
+    Questions?
+  </div>
+
+  <h2>
+    Talk to ZOVELYN.
+  </h2>
+
+  <p>
+    Have a question about this product?
+    We'd be happy to help.
+  </p>
+
+  <a
+    href="https://wa.me/8613423724979?text=Hello%20ZOVELYN%2C%20I%20have%20a%20question%20about%20the%20Starry%20Sky%20Projection%20Night%20Light."
+    class="button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Contact Us on WhatsApp
+  </a>
+
+</section>
+```
 
   </main>
 
   <footer>
 
-    <div class="footer-inner">
-      <div>© 2026 ZOVELYN. All rights reserved.</div>
-      <div>Home & Lifestyle</div>
-    </div>
+```
+<div class="footer-inner">
+
+  <div>
+    © 2026 ZOVELYN. All rights reserved.
+  </div>
+
+  <div>
+    Home & Lifestyle
+  </div>
+
+</div>
+```
 
   </footer>
 
