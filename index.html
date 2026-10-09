@@ -196,11 +196,16 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 35px;
     }
+ 
+.product-card {
+  background: #faf9f6;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
-    .product-card {
-      background: #faf9f6;
-      overflow: hidden;
-    }
+.product-card:hover {
+  transform: translateY(-4px);
+}
 
     .product-image {
   height: 420px;
