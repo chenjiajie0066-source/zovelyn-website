@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chenjiajie0066-source.github.io/zovelyn-website/sitemap.xml
