@@ -88,9 +88,18 @@
 }
 
 .logo {
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.logo img {
+  display: block;
+  width: 130px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -469,6 +478,9 @@
   .nav {
     padding: 18px 20px;
   }
+ .logo img {
+    width: 105px;
+  }
 
   .nav-links {
     gap: 15px;
@@ -562,8 +574,9 @@
   <header>
     <nav class="nav">
 
-      <a href="#" class="logo">ZOVELYN</a>
-
+<a href="index.html" class="logo">
+  <img src="zovelyn-logo-header.png" alt="ZOVELYN">
+</a>
       <div class="nav-links">
         <a href="#products">Products</a>
         <a href="#about">About</a>
